@@ -1,11 +1,11 @@
 import React from 'react';
 
-import screenshot from '../images/bg.jpg'
+import screenshot from '../../images/bg.jpg'
 
 function ProjectItem(props) {
     return (
         <div style={{display: "flex", flexDirection: 'column', flexWrap: 'wrap', width: '200px'}}>
-            <a href="#"><h3>Title</h3></a>
+            <a href="src/components/projects/ProjectItem#"><h3>Title</h3></a>
             <img src={screenshot} alt="screenshot" style={{width: '200px'}}/>
             <p style={{fontSize: '0.5em'}}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur dolores eligendi explicabo illo
@@ -18,7 +18,7 @@ function ProjectItem(props) {
                 <li>Firebase</li>
                 <li>Pizza-dog</li>
             </ul>
-            <a href="#">go see</a>
+            <a href="src/components/projects/ProjectItem#">go see</a>
         </div>
     );
 }

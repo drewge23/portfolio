@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "./aboutMe.module.css";
+import s from "./aboutMe/aboutMe.module.css";
 
 function ScrollArrow({scrollTo, page, text, offset}) {
     return (
