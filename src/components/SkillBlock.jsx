@@ -5,7 +5,7 @@ function SkillBlock(props) {
     if (props.children) {
         return (
             <div style={{width: '50%'}}>
-                <h1>{props.title}</h1>
+                <h1 style={{marginBottom: '1em'}}>{props.title}</h1>
             <div className={s.skillBlock}>
                 {props.children}
             </div>

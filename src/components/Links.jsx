@@ -1,11 +1,10 @@
 import React from 'react';
-import ScrollArrow from "./ScrollArrow";
 
-function Links({scrollTo}) {
+
+function Links() {
     return (
         <div>
-
-            <ScrollArrow scrollTo={scrollTo} page={0} text={'Go up'}/>
+            <LinkItem />
         </div>
     );
 }

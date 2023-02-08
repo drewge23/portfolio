@@ -2,34 +2,30 @@ import React from 'react';
 import s from './skills.module.css'
 import SkillBlock from "./SkillBlock";
 import SkillItem from "./SkillItem";
-import ScrollArrow from "./ScrollArrow";
 
-import FR from '../images/French_flag.png'
-import US from '../images/USA_flag.png'
-import RU from '../images/Russian_flag.png'
-import IL from '../images/Israel_flag.png'
-import SP from '../images/Spain_flag.png'
-import GE from '../images/German_flag.png'
-import HTML from '../images/html.png'
+import FR from '../images/fr_flag_round.png'
+import RU from '../images/ru_flag_round.png'
+import IL from '../images/il_flag_round.png'
+import UK from '../images/uk_flag_round.png'
+import PHYSICS from '../images/physics.png'
+import LINGUISTICS from '../images/linguistics.png'
+import WEBDEV from '../images/webdev.png'
 
-import { ReactJs, Reactquery } from '@icons-pack/react-simple-icons';
+import {Firebase, Javascript, Jquery, ReactJs, Redux} from '@icons-pack/react-simple-icons';
 
-function Skills({scrollTo}) {
+function Skills() {
+    const ICON_SIZE = 40;
+
     return (
         <div className={s.skills}>
             <SkillBlock title='Education 📜🎓'>
-                <SkillItem>Physics, Orel State University, Russia (2015 - 2019)</SkillItem>
-                <SkillItem>Linguistics, Orel State University, Russia (2019 - 2021)</SkillItem>
-                <SkillItem>Linguistics, Orel State University, Russia (2019 - 2021)</SkillItem>
-                <SkillItem>Linguistics, Orel State University, Russia (2019 - 2021)</SkillItem>
-                <SkillItem>Linguistics, Orel State University, Russia (2019 - 2021)</SkillItem>
-                <SkillItem>Linguistics, Orel State University, Russia (2019 - 2021)</SkillItem>
-                <SkillItem>Linguistics, Orel State University, Russia (2019 - 2021)</SkillItem>
-                <SkillItem>Linguistics, Orel State University, Russia (2019 - 2021)</SkillItem>
-                <SkillItem>Linguistics, Orel State University, Russia (2019 - 2021)</SkillItem>
-                <SkillItem>Linguistics, Orel State University, Russia (2019 - 2021)</SkillItem>
-                <SkillItem>Linguistics, Orel State University, Russia (2019 - 2021)</SkillItem>
-                <SkillItem link='https://www.tel-ran.com/'>
+                <SkillItem logoUrl={PHYSICS} link='https://oreluniver.ru/'>
+                    Physics, Orel State University, Russia (2015 - 2019)
+                </SkillItem>
+                <SkillItem logoUrl={LINGUISTICS} link='https://oreluniver.ru/'>
+                    Linguistics, Orel State University, Russia (2019 - 2021)
+                </SkillItem>
+                <SkillItem logoUrl={WEBDEV} link='https://www.tel-ran.com/'>
                     Front-end development, Tel-Ran College, Rehovot, Israel (2022 - 2023)
                 </SkillItem>
             </SkillBlock>
@@ -38,24 +34,46 @@ function Skills({scrollTo}) {
             </SkillBlock>
             <SkillBlock title='Skills 💪🔥'>
                 <div>
-                    <SkillItem quality={8}>JavaScript</SkillItem>
-                    <SkillItem quality={8}>JQuery</SkillItem>
-                    <SkillItem emoji={<ReactJs color='#61DAFB' size={24} />} quality={9}>React</SkillItem>
-                    <SkillItem quality={8}>Redux</SkillItem>
-                    <SkillItem quality={6}>Firebase</SkillItem>
-                    <SkillItem quality={6}>React Native</SkillItem>
+                    <SkillItem
+                        emoji={<ReactJs color='#61DAFB' size={ICON_SIZE}/>}
+                        link='https://reactjs.org/'>
+                        React
+                    </SkillItem>
+                    <SkillItem
+                        emoji={<Redux color='#764ABC' size={ICON_SIZE}/>}
+                        link='https://redux.js.org/'>
+                        Redux
+                    </SkillItem>
+                    <SkillItem
+                        emoji={<Firebase color='#FFCA28' size={ICON_SIZE}/>}
+                        link='https://firebase.google.com/'>
+                        Firebase
+                    </SkillItem>
+                    <SkillItem
+                        emoji={<ReactJs color='#61DAFB' size={ICON_SIZE}/>}
+                        link='https://reactnative.dev/'>
+                        React Native
+                    </SkillItem>
+                    <SkillItem
+                        emoji={<Javascript color='#F7DF1E' size={ICON_SIZE}/>}
+                        link='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>
+                        JavaScript
+                    </SkillItem>
+                    <SkillItem
+                        emoji={<Jquery color='#0769AD' size={ICON_SIZE}/>}
+                        link='https://jquery.com/'>
+                        JQuery
+                    </SkillItem>
                 </div>
                 <div>
-                    <SkillItem logoUrl={US} quality={9}>English</SkillItem>
-                    <SkillItem logoUrl={RU} quality={10}>Russian</SkillItem>
-                    <SkillItem logoUrl={FR} quality={7}>French</SkillItem>
-                    <SkillItem logoUrl={IL} quality={6}>Hebrew</SkillItem>
+                    <SkillItem logoUrl={UK}>English</SkillItem>
+                    <SkillItem logoUrl={RU}>Russian</SkillItem>
+                    <SkillItem logoUrl={FR}>French</SkillItem>
+                    <SkillItem logoUrl={IL}>Hebrew</SkillItem>
                 </div>
             </SkillBlock>
-            <ScrollArrow scrollTo={scrollTo} page={2} text={'Go downer'}/>
         </div>
     );
 }
 
-// 🧑‍🎓👨‍🎓
 export default Skills;
