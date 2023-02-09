@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    --blue: rgba(224, 255, 255, 1);
+    --yellow: rgba(255, 255, 224, 1);
+    --red: rgb(246, 230, 250);
 }
 
 .container {
@@ -17,22 +20,22 @@
 
 .bg {
     background: linear-gradient(
-        rgba(224, 255, 255, 1) 0%, rgba(224, 255, 255, 1) 20%,
-        rgba(255, 255, 224, 1) 30%, rgba(255, 255, 224, 1) 40%,
-        rgba(255, 182, 193, 1) 60%, rgba(255, 182, 193, 1) 70%,
-        rgba(224, 255, 255, 1) 80%, rgba(224, 255, 255, 1) 100%);
+        var(--blue) 0%, var(--blue) 20%,
+        var(--yellow) 30%, var(--yellow) 40%,
+        var(--red) 60%, var(--red) 70%,
+        var(--blue) 80%, var(--blue) 100%);
 }
 
 .cyan {
-    background-color: rgba(224, 255, 255, 0.95);
+    background-color: var(--blue);
 }
 
 .yellow {
-    background-color: rgba(255, 255, 224, 0.95);
+    background-color: var(--yellow);
 }
 
 .coral {
-    background-color: rgba(255, 182, 193, 0.95);
+    background-color: var(--red);
 }
 
 .arrow {
@@ -47,9 +50,9 @@
     background-color: white;
     font-size: 1.5em;
     padding: 0.5em;
-    opacity: 0.9;
+    opacity: 0.5;
 
-    box-shadow: 0px 5px 15px 0px #636363;
+    box-shadow: 0 5px 15px 0 #636363;
     transition: 0.5s;
 }
 .arrow:hover {

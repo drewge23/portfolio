@@ -2,7 +2,7 @@ import './App.css';
 import {Parallax, ParallaxLayer} from "@react-spring/parallax";
 import AboutMe from "./components/aboutMe/AboutMe";
 import Skills from "./components/skills/Skills";
-import Projects from "./components/projects/Projects";
+import Projects from "./components/projects/Projects.jsx";
 import {useRef} from "react";
 import Links from "./components/links/Links";
 
@@ -22,29 +22,29 @@ function App() {
                 />
 
                 <ParallaxLayer offset={0} speed={1} className='centered cyan'>
-                    <AboutMe />
+                    <AboutMe/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={1} className='centered yellow'>
-                    <Skills />
+                    <Skills/>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={1} factor={1.25} className='centered coral'>
-                    <Projects />
+                <ParallaxLayer offset={2} speed={1} factor={2} className='centered coral'>
+                    <Projects/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={3} speed={1} className='centered cyan'>
-                    <Links />
+                    <Links/>
                 </ParallaxLayer>
 
                 <ParallaxLayer offset={0} speed={0.5} factor={0.2}>
-                    <ScrollArrow scrollTo={scrollTo} page={1} text={'Go down'}/>
+                    <ScrollArrow scrollTo={scrollTo} page={1} text={'Go down 🐤'}/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={0.5} factor={0.2}>
-                    <ScrollArrow scrollTo={scrollTo} page={2} text={'Go downer'}/>
+                    <ScrollArrow scrollTo={scrollTo} page={2} text={'Go downer 🏊'}/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={2} speed={0.25} factor={0.2}>
                     <ScrollArrow scrollTo={scrollTo} page={3} text={'🤙 Call me?'}/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={3} speed={0.5} factor={0.2}>
-                    <ScrollArrow scrollTo={scrollTo} page={0} text={'Go up'}/>
+                    <ScrollArrow scrollTo={scrollTo} page={0} text={'Go up 🚀'}/>
                 </ParallaxLayer>
 
 

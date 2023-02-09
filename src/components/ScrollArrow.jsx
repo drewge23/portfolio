@@ -1,11 +1,8 @@
 import React from 'react';
-import s from "./aboutMe/aboutMe.module.css";
 
-function ScrollArrow({scrollTo, page, text, offset}) {
+function ScrollArrow({scrollTo, page, text}) {
     return (
-        <div className='arrow' style={offset && {top: `${100 + offset}vh`}}
-             onClick={() => scrollTo(page)}
-        >
+        <div className='arrow' onClick={() => scrollTo(page)}>
             {text}
         </div>
     );

@@ -1,9 +1,9 @@
 import React from 'react';
-import s from './skills.module.css'
+import s from "./projects.module.css";
 
-function SkillItem(props) {
+function StackItem(props) {
     return (
-        <div className={s.skillItem}>
+        <div className={s.stackItem}>
             {props.logoUrl
                 ? <img src={props.logoUrl} alt=' • ' className={s.logo}/>
                 : <span>{props.icon || ' • '}</span>
@@ -15,4 +15,4 @@ function SkillItem(props) {
     );
 }
 
-export default SkillItem;
+export default StackItem;

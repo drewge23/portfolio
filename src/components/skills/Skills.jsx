@@ -32,35 +32,35 @@ function Skills() {
             <SkillBlock title='Working Experience ‍🈺💼'>
 
             </SkillBlock>
-            <SkillBlock title='Skills 💪🔥'>
+            <SkillBlock title='Skills 💪✨'>
                 <div>
                     <SkillItem
-                        emoji={<ReactJs color='#61DAFB' size={ICON_SIZE}/>}
+                        icon={<ReactJs color='#61DAFB' size={ICON_SIZE}/>}
                         link='https://reactjs.org/'>
                         React
                     </SkillItem>
                     <SkillItem
-                        emoji={<Redux color='#764ABC' size={ICON_SIZE}/>}
+                        icon={<Redux color='#764ABC' size={ICON_SIZE}/>}
                         link='https://redux.js.org/'>
                         Redux
                     </SkillItem>
                     <SkillItem
-                        emoji={<Firebase color='#FFCA28' size={ICON_SIZE}/>}
+                        icon={<Firebase color='#FFCA28' size={ICON_SIZE}/>}
                         link='https://firebase.google.com/'>
                         Firebase
                     </SkillItem>
                     <SkillItem
-                        emoji={<ReactJs color='#61DAFB' size={ICON_SIZE}/>}
+                        icon={<ReactJs color='#61DAFB' size={ICON_SIZE}/>}
                         link='https://reactnative.dev/'>
                         React Native
                     </SkillItem>
                     <SkillItem
-                        emoji={<Javascript color='#F7DF1E' size={ICON_SIZE}/>}
+                        icon={<Javascript color='#F7DF1E' size={ICON_SIZE}/>}
                         link='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>
                         JavaScript
                     </SkillItem>
                     <SkillItem
-                        emoji={<Jquery color='#0769AD' size={ICON_SIZE}/>}
+                        icon={<Jquery color='#0769AD' size={ICON_SIZE}/>}
                         link='https://jquery.com/'>
                         JQuery
                     </SkillItem>

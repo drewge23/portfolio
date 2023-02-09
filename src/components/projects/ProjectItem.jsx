@@ -1,24 +1,19 @@
 import React from 'react';
-
-import screenshot from '../../images/bg.jpg'
+import s from './projects.module.css'
 
 function ProjectItem(props) {
     return (
-        <div style={{display: "flex", flexDirection: 'column', flexWrap: 'wrap', width: '200px'}}>
-            <a href="src/components/projects/ProjectItem#"><h3>Title</h3></a>
-            <img src={screenshot} alt="screenshot" style={{width: '200px'}}/>
-            <p style={{fontSize: '0.5em'}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur dolores eligendi explicabo illo
-                non perferendis perspiciatis porro praesentium quibusdam ratione reprehenderit sapiente, similique
-                voluptate voluptatem. Ad dicta dolore veniam?
+        <div className={s.item}>
+            <a href="#" className={s.title}><h2>{props.title}</h2></a>
+            <img src={props.imageUrl} alt="screenshot" className={s.screenshot}/>
+            <p className={s.description}>
+                {props.description}
             </p>
-            <p style={{fontSize: '0.5em'}}>Technologies: </p>
-            <ul>
-                <li>React</li>
-                <li>Firebase</li>
-                <li>Pizza-dog</li>
-            </ul>
-            <a href="src/components/projects/ProjectItem#">go see</a>
+            <h3>Stack: </h3>
+            <div>
+                {props.children}
+            </div>
+            <a href={props.linkUrl}>Project page →</a>
         </div>
     );
 }
