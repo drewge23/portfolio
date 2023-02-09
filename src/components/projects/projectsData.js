@@ -36,19 +36,37 @@ const projectsData = [
         description: 'Social network web app',
         imageUrl: M4FS_PIC,
         stack: [REACT, REDUX, FIREBASE],
-        linkUrl: '#'
+        linkUrl: 'https://raccoon-lists.web.app/'
     }, {
         title: 'Cipher',
         description: 'Social network web app',
         imageUrl: M4FS_PIC,
         stack: [REACT, REDUX, FIREBASE],
-        linkUrl: '#'
+        linkUrl: 'https://play.google.com/store/apps/details?id=com.drewge.cipher'
     }, {
         title: 'Ptiza Vorobei',
         description: 'Social network web app',
         imageUrl: M4FS_PIC,
         stack: [REACT, REDUX, FIREBASE],
+        linkUrl: 'https://play.google.com/store/apps/details?id=com.ptiza_vorobei.app'
+    }, {
+        title: 'Blackjack',
+        description: 'Social network web app',
+        imageUrl: M4FS_PIC,
+        stack: [REACT, REDUX, FIREBASE],
+        linkUrl: 'https://drewge23.github.io/blackjack/'
+    }, {
+        title: 'Portfolio',
+        description: 'Social network web app',
+        imageUrl: M4FS_PIC,
+        stack: [REACT, REDUX, FIREBASE],
         linkUrl: '#'
+    }, {
+        title: 'Weather App',
+        description: 'Social network web app',
+        imageUrl: M4FS_PIC,
+        stack: [REACT, REDUX, FIREBASE],
+        linkUrl: 'https://drewge23.github.io/weather-app/'
     },
 
 ]

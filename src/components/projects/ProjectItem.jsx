@@ -4,16 +4,22 @@ import s from './projects.module.css'
 function ProjectItem(props) {
     return (
         <div className={s.item}>
-            <a href="#" className={s.title}><h2>{props.title}</h2></a>
-            <img src={props.imageUrl} alt="screenshot" className={s.screenshot}/>
-            <p className={s.description}>
+            <a href={props.linkUrl} className={s.title} target={'_blank'} rel={'noreferrer'}>
+                <h2>{props.title}</h2>
+            </a>
+            <a href={props.linkUrl} className={s.title} target={'_blank'} rel={'noreferrer'}>
+                <img src={props.imageUrl} alt="screenshot" className={s.screenshot}/>
+            </a>
+            <div className={s.description}>
                 {props.description}
-            </p>
+            </div>
             <h3>Stack: </h3>
             <div>
                 {props.children}
             </div>
-            <a href={props.linkUrl}>Project page →</a>
+            <a href={props.linkUrl} target={'_blank'} rel={'noreferrer'}>
+                Project page →
+            </a>
         </div>
     );
 }
