@@ -8,15 +8,20 @@ import M4FS_PIC from '../../images/bg.jpg'
 const ICON_SIZE = 24
 
 const REACT = <StackItem icon={<ReactJs color='#61DAFB' size={ICON_SIZE}/>}
-                         link='https://reactjs.org/'> React </StackItem>
+                         link='https://reactjs.org/'
+                         key={'react'}> React </StackItem>
 const REDUX = <StackItem icon={<Redux color='#764ABC' size={ICON_SIZE}/>}
-                         link='https://redux.js.org/'> Redux </StackItem>
+                         link='https://redux.js.org/'
+                         key={'redux'}> Redux </StackItem>
 const REACT_QUERY = <StackItem icon={<Reactquery color='#FF4154' size={ICON_SIZE}/>}
-                               link='https://reactjs.org/'> React </StackItem>
+                               link='https://reactjs.org/'
+                               key={'react_query'}> React Query </StackItem>
 const REACT_NATIVE = <StackItem icon={<ReactJs color='#61DAFB' size={ICON_SIZE}/>}
-                                link='https://reactjs.org/'> React Native </StackItem>
+                                link='https://reactjs.org/'
+                                key={'react_native'}> React Native </StackItem>
 const FIREBASE = <StackItem icon={<Firebase color='#FFCA28' size={ICON_SIZE}/>}
-                            link='https://firebase.google.com/'> Firebase </StackItem>
+                            link='https://firebase.google.com/'
+                            key={'firebase'}> Firebase </StackItem>
 
 const projectsData = [
     {

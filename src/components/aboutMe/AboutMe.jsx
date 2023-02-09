@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Photo from "./Photo";
 import s from './aboutMe.module.css'
 
@@ -7,7 +7,7 @@ function AboutMe() {
         <div>
             <div className={s.aboutMe}>
                 <div className={s.description}>
-                    <h1 className={s.title}>About me 🐦‍🔥    </h1>
+                    <h1 className={s.title}>About me 🐦‍🔥 </h1>
                     <p className={s.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, alias aliquam doloremque praesentium
                         quam quo sit voluptatum. Consequuntur facere necessitatibus nihil officiis, quia similique.
                         Accusantium amet est ullam unde veniam. Lorem ipsum dolor sit amet, consectetur adipisicing
