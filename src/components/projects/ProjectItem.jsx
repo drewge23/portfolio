@@ -21,7 +21,7 @@ function ProjectItem(props) {
             </a>
                 <img src={props.imageUrl} alt="screenshot" className={s.screenshot}
                 onClick={() => {
-                    //TODO: make images bigger, 2 in a row
+                    //TODO: make images bigger, 2 in a row?
                     $('.projectItem').animate({width: '300px'}, 'slow')
                     $(`#${props.id}`).animate({width: '400px'}, 'slow')
                 }} />
