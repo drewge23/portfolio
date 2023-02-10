@@ -32,7 +32,9 @@
 }
 .screenshot {
     width: 100%;
+    min-height: 200px;
     border-radius: 15px;
+    border: 1px solid black;
 }
 .description {
     text-align: justify;

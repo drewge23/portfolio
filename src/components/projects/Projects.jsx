@@ -10,7 +10,8 @@ function Projects() {
             <div className={s.projectItems}>
                 {projectsData.map(project => (
                     <ProjectItem
-                        key={project.title}
+                        id={project.id}
+                        key={project.id}
                         title={project.title}
                         description={project.description}
                         imageUrl={project.imageUrl}
