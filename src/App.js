@@ -27,7 +27,7 @@ function App() {
                 <ParallaxLayer offset={1} speed={1} className='centered yellow'>
                     <Skills/>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={1} factor={2} className='centered coral'>
+                <ParallaxLayer offset={2} speed={1} className='centered coral'>
                     <Projects/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={3} speed={1} className='centered cyan'>
@@ -40,8 +40,10 @@ function App() {
                 <ParallaxLayer offset={1} speed={0.5} factor={0.2}>
                     <ScrollArrow scrollTo={scrollTo} page={2} text={'Go downer 🏊'}/>
                 </ParallaxLayer>
-                <ParallaxLayer offset={2} speed={0.25} factor={0.2}>
-                    <ScrollArrow scrollTo={scrollTo} page={3} text={'🤙 Call me?'}/>
+                <ParallaxLayer offset={2} speed={0.25} factor={0.2}
+                               // sticky={{start: 2, end: 2.8}}
+                >
+                    <ScrollArrow scrollTo={scrollTo} page={4} text={'🤙 Call me?'}/>
                 </ParallaxLayer>
                 <ParallaxLayer offset={3} speed={0.5} factor={0.2}>
                     <ScrollArrow scrollTo={scrollTo} page={0} text={'Go up 🚀'}/>

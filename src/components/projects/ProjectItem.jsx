@@ -3,15 +3,32 @@ import s from './projects.module.css'
 import $ from "jquery"
 
 function ProjectItem(props) {
+    const zoomIn = (e) => {
+        const normalWidth = '300px'
+        const maxWidth = '80%'
+        if (e.target.parentNode.style.width === maxWidth) {
+            $(e.target).parent().animate({width: normalWidth}, 'slow')
+            $('.projectItem').fadeIn('slow')
+            return
+        }
+        $('.projectItem').each(function() {
+            if ($(this).attr('id') !== $(e.target).parent().attr('id')) {
+                $(this).fadeOut('slow')
+            }
+        })
+        $('.projectItem').animate({width: normalWidth}, 'slow')
+        $(`#${props.id}`).animate({width: maxWidth}, 'slow')
+    }
+
     return (
         <div
             style={{
-            display: 'flex',
-            flexDirection: 'column',
-            flexWrap: 'wrap',
-            gap: '1em',
-            width: '300px',
-        }}
+                display: 'flex',
+                flexDirection: 'column',
+                flexWrap: 'wrap',
+                gap: '1em',
+                width: '40%',
+            }}
             // className={s.item}
             className={'projectItem'}
             id={props.id}
@@ -19,12 +36,8 @@ function ProjectItem(props) {
             <a href={props.linkUrl} className={s.title} target={'_blank'} rel={'noreferrer'}>
                 <h2>{props.title}</h2>
             </a>
-                <img src={props.imageUrl} alt="screenshot" className={s.screenshot}
-                onClick={() => {
-                    //TODO: make images bigger, 2 in a row?
-                    $('.projectItem').animate({width: '300px'}, 'slow')
-                    $(`#${props.id}`).animate({width: '400px'}, 'slow')
-                }} />
+            <img src={props.imageUrl} alt="screenshot" className={s.screenshot}
+                 onClick={(e) => zoomIn(e)}/>
             <div className={s.description}>
                 {props.description}
             </div>

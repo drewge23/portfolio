@@ -4,7 +4,7 @@ import React from "react";
 
 //IMAGES
 import M4FS_PIC from '../../images/bg.jpg'
-import WEATHER_PIC from '../../images/weather_app2.png'
+import WEATHER_PIC from '../../images/weather_app.png'
 import BLACKJACK_PIC from '../../images/blackjack.png'
 import RACCOON_PIC from '../../images/raccoon_lists.png'
 import VOROBEI_PIC from '../../images/ptiza_vorobei.png'

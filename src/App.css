@@ -1,3 +1,9 @@
+html,
+body,
+#root {
+    overflow: hidden;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,10 +26,12 @@
 
 .bg {
     background: linear-gradient(
-        var(--blue) 0%, var(--blue) 20%,
-        var(--yellow) 30%, var(--yellow) 40%,
-        var(--red) 60%, var(--red) 70%,
-        var(--blue) 80%, var(--blue) 100%);
+        /*var(--blue) 0%, var(--blue) 20%,*/
+        /*var(--yellow) 30%, var(--yellow) 40%,*/
+        /*var(--red) 60%, var(--red) 70%,*/
+        /*var(--blue) 80%, var(--blue) 100%);*/
+
+    var(--blue) 12.5%, var(--yellow) 37.5%, var(--red) 62.5%, var(--blue) 87.5%);
 }
 
 .cyan {
