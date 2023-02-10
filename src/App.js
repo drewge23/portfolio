@@ -9,6 +9,10 @@ import Links from "./components/links/Links";
 import cats from './images/bg.jpg'
 import ScrollArrow from "./components/ScrollArrow";
 
+//TODO: add copying functionality to links
+//TODO: fix projects with some kind of a modal
+//TODO: add some parallaxed images to the page
+
 function App() {
     const parallaxRef = useRef()
     const scrollTo = (page) => {

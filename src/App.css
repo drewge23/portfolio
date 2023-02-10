@@ -1,7 +1,14 @@
 html,
 body,
 #root {
-    overflow: hidden;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#root::-webkit-scrollbar {
+    display: none;
 }
 
 * {
