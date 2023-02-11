@@ -3,21 +3,25 @@ import s from './projects.module.css'
 import $ from "jquery"
 
 function ProjectItem(props) {
+    // const zoomIn = (e) => {
+    //     const projectItem = $('.projectItem')
+    //     const normalWidth = '300px'
+    //     const maxWidth = '80%'
+    //     if (e.target.parentNode.style.width === maxWidth) {
+    //         $(e.target).parent().animate({width: normalWidth}, 'slow')
+    //         $('.projectItem').fadeIn('slow')
+    //         return
+    //     }
+    //     projectItem.each(function() {
+    //         if ($(this).attr('id') !== $(e.target).parent().attr('id')) {
+    //             $(this).fadeOut('slow')
+    //         }
+    //     })
+    //     projectItem.animate({width: normalWidth}, 'slow')
+    //     $(`#${props.id}`).animate({width: maxWidth}, 'slow')
+    // }
     const zoomIn = (e) => {
-        const normalWidth = '300px'
-        const maxWidth = '80%'
-        if (e.target.parentNode.style.width === maxWidth) {
-            $(e.target).parent().animate({width: normalWidth}, 'slow')
-            $('.projectItem').fadeIn('slow')
-            return
-        }
-        $('.projectItem').each(function() {
-            if ($(this).attr('id') !== $(e.target).parent().attr('id')) {
-                $(this).fadeOut('slow')
-            }
-        })
-        $('.projectItem').animate({width: normalWidth}, 'slow')
-        $(`#${props.id}`).animate({width: maxWidth}, 'slow')
+        props.setScreenshotUrl( $(e.target).attr('src'))
     }
 
     return (
@@ -27,7 +31,7 @@ function ProjectItem(props) {
                 flexDirection: 'column',
                 flexWrap: 'wrap',
                 gap: '1em',
-                width: '40%',
+                width: '300px',
             }}
             // className={s.item}
             className={'projectItem'}
@@ -46,7 +50,7 @@ function ProjectItem(props) {
                 {props.children}
             </div>
             <a href={props.linkUrl} target={'_blank'} rel={'noreferrer'}>
-                Project page →
+                <h3>Project page →</h3>
             </a>
         </div>
     );

@@ -65,7 +65,7 @@ function Skills() {
                         JQuery
                     </SkillItem>
                 </div>
-                <div>
+                <div className={s.languages}>
                     <SkillItem logoUrl={UK}>English</SkillItem>
                     <SkillItem logoUrl={RU}>Russian</SkillItem>
                     <SkillItem logoUrl={FR}>French</SkillItem>
