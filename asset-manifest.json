@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.3d3c25a0.css",
+    "main.js": "/portfolio/static/js/main.c5ea4c27.js",
+    "static/js/787.8e198dab.chunk.js": "/portfolio/static/js/787.8e198dab.chunk.js",
+    "static/media/ptiza_vorobei.png": "/portfolio/static/media/ptiza_vorobei.a5b4bd98b689cb564a12.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.2e556cb8146e33f4887b.png",
+    "static/media/cipher.png": "/portfolio/static/media/cipher.cf18bcb7e7e48ee30038.png",
+    "static/media/weather_app.png": "/portfolio/static/media/weather_app.1ac3d519ff02bab7be1e.png",
+    "static/media/blackjack.png": "/portfolio/static/media/blackjack.889fc2ad10654c500548.png",
+    "static/media/bg.jpg": "/portfolio/static/media/bg.4c2bd89969d615338262.jpg",
+    "static/media/raccoon_lists.png": "/portfolio/static/media/raccoon_lists.5e29a6ba0d8c6d5b60c1.png",
+    "static/media/me.jpeg": "/portfolio/static/media/me.f7663e59fdc3fc8b0da1.jpeg",
+    "static/media/il_flag_round.png": "/portfolio/static/media/il_flag_round.0e1920c32e4439f38abe.png",
+    "static/media/uk_flag_round.png": "/portfolio/static/media/uk_flag_round.682f24cbc9a64854993b.png",
+    "static/media/linguistics.png": "/portfolio/static/media/linguistics.a4228edc541edaf94596.png",
+    "static/media/physics.png": "/portfolio/static/media/physics.f7a43b628f8f2eb0c035.png",
+    "static/media/fr_flag_round.png": "/portfolio/static/media/fr_flag_round.0234f3f8cc27b2c49358.png",
+    "static/media/ru_flag_round.png": "/portfolio/static/media/ru_flag_round.44d9732ac5bfba042627.png",
+    "index.html": "/portfolio/index.html",
+    "main.3d3c25a0.css.map": "/portfolio/static/css/main.3d3c25a0.css.map",
+    "main.c5ea4c27.js.map": "/portfolio/static/js/main.c5ea4c27.js.map",
+    "787.8e198dab.chunk.js.map": "/portfolio/static/js/787.8e198dab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d3c25a0.css",
+    "static/js/main.c5ea4c27.js"
+  ]
+}
