@@ -15,7 +15,7 @@ function Projects() {
     useEffect(() => {
         const container = $('#projectItems')
         container.on('scroll', () => {
-            if (container.prop("scrollHeight") - container.scrollTop() < 300 + container.height()) {
+            if (container.prop("scrollHeight") - container.scrollTop() < 200 + container.height()) {
                 // $('#nextBtn').html('⬆')
                 setIsUp(true)
             } else {
