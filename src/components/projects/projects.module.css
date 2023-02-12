@@ -20,7 +20,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5vw;
@@ -112,7 +112,9 @@
 .stackItem a[href]:hover {
     color: #001686;
 }
-
+.logo {
+    width: 24px;
+}
 .nextBtn {
     position: fixed;
     /*right: 50%;*/

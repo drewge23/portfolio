@@ -6,9 +6,9 @@ function SkillBlock(props) {
         return (
             <div style={{width: '50%'}}>
                 <h1 style={{marginBottom: '1em'}}>{props.title}</h1>
-            <div className={s.skillBlock}>
-                {props.children}
-            </div>
+                <div className={s.skillBlock}>
+                    {props.children}
+                </div>
             </div>
         );
     } else return null

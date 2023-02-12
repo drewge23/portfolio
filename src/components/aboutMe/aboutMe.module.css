@@ -42,7 +42,7 @@
     width: 300px;
     height: 300px;
     border-radius: 150px;
-    background-color: white;
+    background-color: rgb(246, 230, 250);
     /*outline: 2px solid black;*/
     /*outline-offset: -1px;*/
     /*box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(99,99,99,0);*/
@@ -54,7 +54,13 @@
     border-radius: 50%;
 
     box-shadow: 0 0 15px 2px rgb(131, 87, 142);
+    transition: box-shadow 500ms;
 }
+.photo:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px 4px rgb(131, 87, 142);
+}
+
 @media screen and (max-width: 600px) {
     .aboutMe {
         margin: 5vh auto 0;

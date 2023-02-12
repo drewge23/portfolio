@@ -1,17 +1,15 @@
 import './App.css';
 import {Parallax, ParallaxLayer} from "@react-spring/parallax";
+import {useRef} from "react";
 import AboutMe from "./components/aboutMe/AboutMe";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects.jsx";
-import {useRef} from "react";
 import Links from "./components/links/Links";
-
-import cats from './images/bg.jpg'
 import ScrollArrow from "./components/ScrollArrow";
 
-//TODO: fix projects with some kind of a modal
-//TODO: add 'next' button to projects
-//TODO: add some parallaxed images to the page
+//TODO: add descriptions
+//TODO: sort the images
+//TODO: add some parallaxed cats to the page
 
 function App() {
     const parallaxRef = useRef()

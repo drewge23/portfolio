@@ -21,7 +21,7 @@ function ProjectItem(props) {
     //     $(`#${props.id}`).animate({width: maxWidth}, 'slow')
     // }
     const zoomIn = (e) => {
-        props.setScreenshotUrl( $(e.target).attr('src'))
+        props.setScreenshotUrl($(e.target).attr('src'))
     }
 
     return (
@@ -49,9 +49,11 @@ function ProjectItem(props) {
             <div>
                 {props.children}
             </div>
-            <a href={props.linkUrl} target={'_blank'} rel={'noreferrer'}>
-                <h3>Project page →</h3>
-            </a>
+            {props.linkUrl
+                ? <a href={props.linkUrl} target={'_blank'} rel={'noreferrer'}>
+                    <h3>Project page →</h3>
+                </a>
+                : <h3 style={{opacity: '0.3'}}>Work in progress...</h3>}
         </div>
     );
 }
