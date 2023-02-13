@@ -8,13 +8,11 @@ function AboutMe() {
             <div className={s.aboutMe}>
                 <div className={s.description}>
                     <h1 className={s.title}>About me 🐦‍🔥 </h1>
-                    <p className={s.text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, alias aliquam doloremque praesentium
-                        quam quo sit voluptatum. Consequuntur facere necessitatibus nihil officiis, quia similique.
-                        Accusantium amet est ullam unde veniam. Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Ad
-                        amet assumenda distinctio dolorum exercitationem fuga in molestiae nam, neque nihil,
-                        perspiciatis
-                        quod rerum similique voluptate?</p>
+                    <p className={s.text}>Shalom! I’m Andrei, I’m around 24 and I’m an aspiring front-end developer. I’m
+                        all about learning new stuff, keen on physics, linguistics and theosophic studies. Love learning
+                        languages. If I happen to have free time I play chess, texas holdem, renju, shogi and other
+                        classic table games. Badminton is also on the list. Nowadays I dive deep into SPA development
+                        with React and Firebase as my main tools. Open for hiring!</p>
                 </div>
                 <div className={s.photoComponent}>
                     <Photo/>

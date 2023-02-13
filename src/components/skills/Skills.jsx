@@ -3,13 +3,13 @@ import s from './skills.module.css'
 import SkillBlock from "./SkillBlock";
 import SkillItem from "./SkillItem";
 
-import FR from '../../images/fr_flag_round.png'
-import RU from '../../images/ru_flag_round.png'
-import IL from '../../images/il_flag_round.png'
-import UK from '../../images/uk_flag_round.png'
-import PHYSICS from '../../images/physics.png'
-import LINGUISTICS from '../../images/linguistics.png'
-import WEBDEV from '../../images/webdev.png'
+import FR from '../../images/flags/fr_flag_round.png'
+import RU from '../../images/flags/ru_flag_round.png'
+import IL from '../../images/flags/il_flag_round.png'
+import UK from '../../images/flags/uk_flag_round.png'
+import PHYSICS from '../../images/icons/physics.png'
+import LINGUISTICS from '../../images/icons/linguistics.png'
+import WEBDEV from '../../images/icons/webdev.png'
 
 import {Firebase, Javascript, Jquery, ReactJs, Redux} from '@icons-pack/react-simple-icons';
 
