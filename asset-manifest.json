@@ -1,29 +1,43 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d5090984.css",
-    "main.js": "/portfolio/static/js/main.720b7aa7.js",
+    "main.css": "/portfolio/static/css/main.9cfbc3cb.css",
+    "main.js": "/portfolio/static/js/main.85dc6fc9.js",
+    "static/js/986.cd1eb714.chunk.js": "/portfolio/static/js/986.cd1eb714.chunk.js",
     "static/js/787.8e198dab.chunk.js": "/portfolio/static/js/787.8e198dab.chunk.js",
+    "static/js/37.a8f59527.chunk.js": "/portfolio/static/js/37.a8f59527.chunk.js",
     "static/media/ptiza_vorobei.png": "/portfolio/static/media/ptiza_vorobei.a5b4bd98b689cb564a12.png",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.2e556cb8146e33f4887b.png",
     "static/media/cipher.png": "/portfolio/static/media/cipher.cf18bcb7e7e48ee30038.png",
+    "static/media/cat.png": "/portfolio/static/media/cat.2fbc740a39fde13b4ff8.png",
+    "static/media/cat_mirrored.png": "/portfolio/static/media/cat_mirrored.2c363ec659694cb477df.png",
+    "static/media/social_network.png": "/portfolio/static/media/social_network.a1c0db01a224fa8a9fd5.png",
+    "static/media/me3.jpeg": "/portfolio/static/media/me3.08703454f69dd8d948da.jpeg",
+    "static/media/paint.png": "/portfolio/static/media/paint.7e912ad793183084bc06.png",
     "static/media/weather_app.png": "/portfolio/static/media/weather_app.1ac3d519ff02bab7be1e.png",
     "static/media/blackjack.png": "/portfolio/static/media/blackjack.889fc2ad10654c500548.png",
-    "static/media/bg.jpg": "/portfolio/static/media/bg.4c2bd89969d615338262.jpg",
     "static/media/raccoon_lists.png": "/portfolio/static/media/raccoon_lists.5e29a6ba0d8c6d5b60c1.png",
+    "static/media/m4fs.png": "/portfolio/static/media/m4fs.080d0019f8f3ef125873.png",
+    "static/media/me2.jpeg": "/portfolio/static/media/me2.8b7cc5af069f4fa7051f.jpeg",
     "static/media/me.jpeg": "/portfolio/static/media/me.f7663e59fdc3fc8b0da1.jpeg",
+    "static/media/me1.jpeg": "/portfolio/static/media/me1.d9f35f5638f95a4901c8.jpeg",
     "static/media/il_flag_round.png": "/portfolio/static/media/il_flag_round.0e1920c32e4439f38abe.png",
+    "static/media/formik.png": "/portfolio/static/media/formik.db018514c41074f86008.png",
     "static/media/uk_flag_round.png": "/portfolio/static/media/uk_flag_round.682f24cbc9a64854993b.png",
     "static/media/linguistics.png": "/portfolio/static/media/linguistics.a4228edc541edaf94596.png",
+    "static/media/react_spring.png": "/portfolio/static/media/react_spring.f974244b98b2f30a4af9.png",
+    "static/media/spades.png": "/portfolio/static/media/spades.9a92e0375a7092bc5e9f.png",
     "static/media/physics.png": "/portfolio/static/media/physics.f7a43b628f8f2eb0c035.png",
     "static/media/fr_flag_round.png": "/portfolio/static/media/fr_flag_round.0234f3f8cc27b2c49358.png",
     "static/media/ru_flag_round.png": "/portfolio/static/media/ru_flag_round.44d9732ac5bfba042627.png",
     "index.html": "/portfolio/index.html",
-    "main.d5090984.css.map": "/portfolio/static/css/main.d5090984.css.map",
-    "main.720b7aa7.js.map": "/portfolio/static/js/main.720b7aa7.js.map",
-    "787.8e198dab.chunk.js.map": "/portfolio/static/js/787.8e198dab.chunk.js.map"
+    "main.9cfbc3cb.css.map": "/portfolio/static/css/main.9cfbc3cb.css.map",
+    "main.85dc6fc9.js.map": "/portfolio/static/js/main.85dc6fc9.js.map",
+    "986.cd1eb714.chunk.js.map": "/portfolio/static/js/986.cd1eb714.chunk.js.map",
+    "787.8e198dab.chunk.js.map": "/portfolio/static/js/787.8e198dab.chunk.js.map",
+    "37.a8f59527.chunk.js.map": "/portfolio/static/js/37.a8f59527.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5090984.css",
-    "static/js/main.720b7aa7.js"
+    "static/css/main.9cfbc3cb.css",
+    "static/js/main.85dc6fc9.js"
   ]
 }
