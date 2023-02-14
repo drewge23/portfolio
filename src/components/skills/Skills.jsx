@@ -11,7 +11,8 @@ import PHYSICS from '../../images/icons/physics.png'
 import LINGUISTICS from '../../images/icons/linguistics.png'
 import WEBDEV from '../../images/icons/webdev.png'
 
-import {Firebase, Javascript, Jquery, ReactJs, Redux} from '@icons-pack/react-simple-icons';
+import {Firebase, Javascript, Jquery, ReactJs, Redux, Typescript} from '@icons-pack/react-simple-icons';
+import StackItem from "../projects/StackItem";
 
 function Skills() {
     const ICON_SIZE = 40;
@@ -58,6 +59,11 @@ function Skills() {
                         icon={<Javascript color='#F7DF1E' size={ICON_SIZE}/>}
                         link='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>
                         JavaScript
+                    </SkillItem>
+                    <SkillItem
+                        icon={<Typescript color='#3178C6' size={ICON_SIZE}/>}
+                        link='https://www.typescriptlang.org/'>
+                        TypeScript
                     </SkillItem>
                     <SkillItem
                         icon={<Jquery color='#0769AD' size={ICON_SIZE}/>}

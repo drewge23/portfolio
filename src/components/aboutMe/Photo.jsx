@@ -1,18 +1,15 @@
 import React, {useState} from 'react';
 import photo1 from '../../images/me/me1.jpeg'
 import photo2 from '../../images/me/me2.jpeg'
-import photo2_cropped from '../../images/me/me2_cropped.jpeg'
 import photo3 from '../../images/me/me3.jpeg'
-import photo4 from '../../images/me/me4.jpeg'
-import photo4_cropped from '../../images/me/me4_cropped.jpeg'
-import photo5 from '../../images/me/me5.jpeg'
 import photo from '../../images/me/me.jpeg'
 import s from './aboutMe.module.css'
 import $ from 'jquery'
 
 function Photo(props) {
-    const photos = [photo1, photo2, photo2_cropped, photo3, photo4, photo4_cropped, photo5, photo]
-    const [currentPhoto, setCurrentPhoto] = useState(Math.floor(Math.random() * photos.length))
+    const photos = [photo1, photo2, photo3, photo]
+    const [currentPhoto, setCurrentPhoto] = useState(0)
+    // const [currentPhoto, setCurrentPhoto] = useState(Math.floor(Math.random() * photos.length - 1))
 
     const animationTime = 100
     const onCLick = () => {

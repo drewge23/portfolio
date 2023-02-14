@@ -3,7 +3,7 @@ import {
     Axios,
     Canva,
     Expo,
-    Firebase, Mui,
+    Firebase, Jquery, Mui,
     ReactJs,
     Reactquery,
     Reactrouter,
@@ -25,6 +25,8 @@ import PORTFILIO_PIC from '../../images/screenshots/portfolio.png'
 import SPADES_PIC from '../../images/icons/spades.png'
 import WEATHER_API_PIC from '../../images/icons/weather_api.png'
 import REACT_SPRING_PIC from '../../images/icons/react_spring.png'
+import FORMIK_PIC from '../../images/icons/formik.png'
+import BEAUTIFUL_DND_PIC from '../../images/icons/beautiful_dnd.png'
 import PAINT_PIC from '../../images/icons/paint.png'
 
 const ICON_SIZE = 24
@@ -44,9 +46,18 @@ const REACT_SPRING = <StackItem logoUrl={REACT_SPRING_PIC}
 const REACT_ROUTER = <StackItem icon={<Reactrouter color='#CA4245' size={ICON_SIZE}/>}
                                 link='https://reactrouter.com/en/main/'
                                 key={'react_router'}> React Router </StackItem>
+const FORMIK = <StackItem logoUrl={FORMIK_PIC}
+                                link='https://formik.org/'
+                                key={'formik'}> Formik </StackItem>
+const BEAUTIFUL_DND = <StackItem logoUrl={BEAUTIFUL_DND_PIC}
+                                link='https://github.com/atlassian/react-beautiful-dnd/'
+                                key={'beautiful_dnd'}> react-beautiful-dnd </StackItem>
 const TS = <StackItem icon={<Typescript color='#3178C6' size={ICON_SIZE}/>}
                       link='https://www.typescriptlang.org/'
                       key={'ts'}> TypeScript </StackItem>
+const JQUERY = <StackItem icon={<Jquery color='#0769AD' size={ICON_SIZE}/>}
+                      link='https://jquery.com/'
+                      key={'jquery'}> jQuery </StackItem>
 const MUI = <StackItem icon={<Mui color='#007FFF' size={ICON_SIZE}/>}
                        link='https://mui.com/'
                        key={'mui'}> Material UI </StackItem>
@@ -82,42 +93,42 @@ const WEATHER_API = <StackItem logoUrl={WEATHER_API_PIC}
 const projectsData = [
     {
         title: 'M4FS',
-        description: [<p>A prototype of a math learning app. Functionality includes: answer validation,
+        description: [<p key={1}>A prototype of a math learning app. Functionality includes: answer validation,
             progress and test systems, bonus levels system, a simple shop.
             Built with <b>Firebase</b>, <b>React</b>, <b>Redux</b>, <b>Formik</b> and other React libraries.</p>,
-            <p><b>Login:</b> potential_hirer</p>,
-            <p><b>Password:</b> drewge23</p>,
-            <p>Development is still in progress</p>],
+            <p key={2}><b>Login:</b> potential-hirer</p>,
+            <p key={3}><b>Password:</b> drewge23</p>,
+            <p key={4}>Development is still in progress</p>],
         imageUrl: M4FS_PIC,
-        stack: [REACT, TS, REDUX, FIREBASE, MUI],
+        stack: [REACT, TS, REDUX, FIREBASE, FORMIK, MUI],
         linkUrl: null,
         id: 'm4fs'
     }, {
         title: 'Social Network',
-        description: [<p>A small social network with loginization, profile page editing functionality and ability
+        description: [<p key={1}>A small social network with loginization, profile page editing functionality and ability
             to visit pages of other users. Global state is managed with <b>Redux</b>,
             fetch requests are handled using third party api.</p>,
-            <p><b>Login:</b> potential_hirer</p>,
-            <p><b>Password:</b> drewge23</p>],
+            <p key={2}><b>Login:</b> potential-hirer</p>,
+            <p key={3}><b>Password:</b> drewge23</p>],
         imageUrl: SOCIAL_NETWORK_PIC,
         stack: [REACT, REDUX, REACT_ROUTER, AXIOS],
         linkUrl: 'https://github.com/drewge23/social-network',
         id: 'social_network'
     }, {
         title: 'Raccoon Lists',
-        description: [<p>A web-app able to handle creation of multiple to-do lists by different users.
+        description: [<p key={1}>A web-app able to handle creation of multiple to-do lists by different users.
             Authentication, hosting and database are of <b>Firebase</b> service.
             Lists are drag-and-droppable, d&d is achieved with the <b>react-beautiful-dnd</b> library.
             Error handling is done with an ErrorBoundary React component. Mobile friendly</p>,
-            <p><b>Login:</b> potential_hirer@gmail.com</p>,
-            <p><b>Password:</b> drewge23</p>],
+            <p key={2}><b>Email:</b> potential.hirer@gmail.com</p>,
+            <p key={3}><b>Password:</b> drewge23</p>],
         imageUrl: RACCOON_PIC,
-        stack: [FIREBASE, REACT],
+        stack: [FIREBASE, REACT, BEAUTIFUL_DND],
         linkUrl: 'https://raccoon-lists.web.app/',
         id: 'raccoon_lists'
     }, {
         title: 'Weather App',
-        description: [<p>A simple weather application with access to the current weather info at the given city.
+        description: [<p key={1}>A simple weather application with access to the current weather info at the given city.
             The information is fetched via <b>OpenWeather API</b> with the help of <b>React Query</b> lib.
             Mobile friendly</p>],
         imageUrl: WEATHER_PIC,
@@ -126,7 +137,7 @@ const projectsData = [
         id: 'weather_app'
     }, {
         title: 'Cipher',
-        description: [<p>A mobile application built with <b>React Native</b>. Goal of the game is to guess
+        description: [<p key={1}>A mobile application built with <b>React Native</b>. Goal of the game is to guess
             the hidden number, trying to use as few turns as possible. Each of your answers is evaluated
             and returns a set of hints to advance. Distributed via Google Play</p>],
         imageUrl: CIPHER_PIC,
@@ -135,16 +146,16 @@ const projectsData = [
         id: 'cipher'
     }, {
         title: 'Portfolio',
-        description: [<p>An SPA built with <b>React</b>. Parallax effects are implemented via <b>React Spring</b>
+        description: [<p key={1}>An SPA built with <b>React</b>. Parallax effects are implemented via <b>React Spring</b>
             library. Basic animations are done with the help of <b>jQuery</b>.
             Designed by myself (as all the other apps, if not stated otherwise). Mobile friendly</p>],
         imageUrl: PORTFILIO_PIC,
-        stack: [REACT, REACT_SPRING, PAINT],
+        stack: [REACT, REACT_SPRING, JQUERY, PAINT],
         linkUrl: 'https://drewge23.github.io/portfolio/',
         id: 'portfolio'
     }, {
         title: 'Ptiza Vorobei',
-        description: [<p>Ptiza Vorobei is an interactive book built on a zero-coding platform
+        description: [<p key={1}>Ptiza Vorobei is an interactive book built on a zero-coding platform
             – <b>SAP</b>, formal AppGyver – for Android and iOS devices. All the basic reader-app functionality
             is included: page and chapter navigation, bookmarks system, etc. Designed using Canva.
             Distributed via Google Play</p>],
@@ -154,7 +165,7 @@ const projectsData = [
         id: 'ptiza_votobei'
     }, {
         title: 'Blackjack',
-        description: [<p>A minuscule web-app – the Blackjack game (1 player vs AI). Card deck manipulations
+        description: [<p key={1}>A minuscule web-app – the Blackjack game (1 player vs AI). Card deck manipulations
             are done by the meanings of <b>Card Deck API</b>. Asynchronous actions are handled with
             the fetch method and basic <b>React</b> hooks</p>],
         imageUrl: BLACKJACK_PIC,

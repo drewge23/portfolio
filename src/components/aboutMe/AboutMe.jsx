@@ -12,7 +12,7 @@ function AboutMe() {
                         all about learning new stuff, keen on physics, linguistics and theosophic studies. Love learning
                         languages. If I happen to have free time I play chess, texas holdem, renju, shogi and other
                         classic table games. Badminton is also on the list. Nowadays I dive deep into SPA development
-                        with React and Firebase as my main tools. Open for hiring!</p>
+                        with <b>React</b>, <b>Redux</b> and <b>Firebase</b> as my main tools. Open for hiring!</p>
                 </div>
                 <div className={s.photoComponent}>
                     <Photo/>
