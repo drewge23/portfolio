@@ -112,7 +112,7 @@ const projectsData = [
             <p key={3}><b>Password:</b> drewge23</p>],
         imageUrl: SOCIAL_NETWORK_PIC,
         stack: [REACT, REDUX, REACT_ROUTER, AXIOS],
-        linkUrl: 'https://github.com/drewge23/social-network',
+        linkUrl: 'https://drewge23.github.io/social-network/',
         id: 'social_network'
     }, {
         title: 'Raccoon Lists',

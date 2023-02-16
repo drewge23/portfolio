@@ -51,7 +51,7 @@ function ProjectItem(props) {
             </div>
             {props.linkUrl
                 ? <a href={props.linkUrl} target={'_blank'} rel={'noreferrer'}>
-                    <h3>Project page →</h3>
+                    <h3>Project page 🚀</h3>
                 </a>
                 : <h3 style={{opacity: '0.3'}}>Work in progress...</h3>}
         </div>
