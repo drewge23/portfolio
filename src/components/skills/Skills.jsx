@@ -12,7 +12,6 @@ import LINGUISTICS from '../../images/icons/linguistics.png'
 import WEBDEV from '../../images/icons/webdev.png'
 
 import {Firebase, Javascript, Jquery, ReactJs, Redux, Typescript} from '@icons-pack/react-simple-icons';
-import StackItem from "../projects/StackItem";
 
 function Skills() {
     const ICON_SIZE = 40;

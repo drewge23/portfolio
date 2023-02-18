@@ -14,7 +14,7 @@ function Projects() {
     const [isUp, setIsUp] = useState(false)
     useEffect(() => {
         const container = $('#projectItems')
-        container.on('scroll', () => {
+        const scroll = () => {
             if (container.prop("scrollHeight") - container.scrollTop() < 200 + container.height()) {
                 // $('#nextBtn').html('⬆')
                 setIsUp(true)
@@ -22,7 +22,9 @@ function Projects() {
                 // $('#nextBtn').html('⬇')
                 setIsUp(false)
             }
-        })
+        }
+            container.on('scroll', scroll)
+            return () => container.off('scroll', scroll)
     }, [])
     const scrollProjects = () => {
         const container = $('#projectItems')

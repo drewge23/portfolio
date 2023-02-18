@@ -20,6 +20,16 @@ function Links() {
                 links[i].style.color = ICON_COLOR
             })
         }
+        return () => {
+            for (let i = 0; i < links.length; i++) {
+                links[i].removeEventListener('mouseover', () => {
+                    links[i].style.color = links[i].dataset.color
+                })
+                links[i].removeEventListener('mouseout', () => {
+                    links[i].style.color = ICON_COLOR
+                })
+            }
+        }
     }, [])
 
     //LINKS
