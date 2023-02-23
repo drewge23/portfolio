@@ -104,17 +104,6 @@ const projectsData = [
         linkUrl: null,
         id: 'm4fs'
     }, {
-        title: 'Social Network',
-        description: [<p key={1}>A small social network with loginization, profile page editing functionality and ability
-            to visit pages of other users. Global state is managed with <b>Redux</b>,
-            fetch requests are handled using third party api.</p>,
-            <p key={2}><b>Login:</b> potential-hirer</p>,
-            <p key={3}><b>Password:</b> drewge23</p>],
-        imageUrl: SOCIAL_NETWORK_PIC,
-        stack: [REACT, REDUX, REACT_ROUTER, AXIOS],
-        linkUrl: 'https://drewge23.github.io/social-network/',
-        id: 'social_network'
-    }, {
         title: 'Raccoon Lists',
         description: [<p key={1}>A web-app able to handle creation of multiple to-do lists by different users.
             Authentication, hosting and database are of <b>Firebase</b> service.
@@ -127,14 +116,25 @@ const projectsData = [
         linkUrl: 'https://raccoon-lists.web.app/',
         id: 'raccoon_lists'
     }, {
-        title: 'Weather App',
-        description: [<p key={1}>A simple weather application with access to the current weather info at the given city.
-            The information is fetched via <b>OpenWeather API</b> with the help of <b>React Query</b> lib.
-            Mobile friendly</p>],
-        imageUrl: WEATHER_PIC,
-        stack: [REACT, REACT_QUERY, WEATHER_API],
-        linkUrl: 'https://drewge23.github.io/weather-app/',
-        id: 'weather_app'
+        title: 'Portfolio',
+        description: [<p key={1}>An SPA built with <b>React</b>. Parallax effects are implemented via <b>React Spring</b>
+            library. Basic animations are done with the help of <b>jQuery</b>.
+            Designed by myself (as all the other apps, if not stated otherwise). Mobile friendly</p>],
+        imageUrl: PORTFILIO_PIC,
+        stack: [REACT, REACT_SPRING, JQUERY, PAINT],
+        linkUrl: 'https://drewge23.github.io/portfolio/',
+        id: 'portfolio'
+    }, {
+        title: 'Social Network',
+        description: [<p key={1}>A small social network with loginization, profile page editing functionality and ability
+            to visit pages of other users. Global state is managed with <b>Redux</b>,
+            fetch requests are handled using third party api.</p>,
+            <p key={2}><b>Login:</b> potential-hirer</p>,
+            <p key={3}><b>Password:</b> drewge23</p>],
+        imageUrl: SOCIAL_NETWORK_PIC,
+        stack: [REACT, REDUX, REACT_ROUTER, AXIOS],
+        linkUrl: 'https://drewge23.github.io/social-network/',
+        id: 'social_network'
     }, {
         title: 'Cipher',
         description: [<p key={1}>A mobile application built with <b>React Native</b>. Goal of the game is to guess
@@ -145,15 +145,6 @@ const projectsData = [
         linkUrl: 'https://play.google.com/store/apps/details?id=com.drewge.cipher',
         id: 'cipher'
     }, {
-        title: 'Portfolio',
-        description: [<p key={1}>An SPA built with <b>React</b>. Parallax effects are implemented via <b>React Spring</b>
-            library. Basic animations are done with the help of <b>jQuery</b>.
-            Designed by myself (as all the other apps, if not stated otherwise). Mobile friendly</p>],
-        imageUrl: PORTFILIO_PIC,
-        stack: [REACT, REACT_SPRING, JQUERY, PAINT],
-        linkUrl: 'https://drewge23.github.io/portfolio/',
-        id: 'portfolio'
-    }, {
         title: 'Ptiza Vorobei',
         description: [<p key={1}>Ptiza Vorobei is an interactive book built on a zero-coding platform
             – <b>SAP</b>, formal AppGyver – for Android and iOS devices. All the basic reader-app functionality
@@ -163,6 +154,15 @@ const projectsData = [
         stack: [APP_GYVER, CANVA],
         linkUrl: 'https://play.google.com/store/apps/details?id=com.ptiza_vorobei.app',
         id: 'ptiza_votobei'
+    }, {
+        title: 'Weather App',
+        description: [<p key={1}>A simple weather application with access to the current weather info at the given city.
+            The information is fetched via <b>OpenWeather API</b> with the help of <b>React Query</b> lib.
+            Mobile friendly</p>],
+        imageUrl: WEATHER_PIC,
+        stack: [REACT, REACT_QUERY, WEATHER_API],
+        linkUrl: 'https://drewge23.github.io/weather-app/',
+        id: 'weather_app'
     }, {
         title: 'Blackjack',
         description: [<p key={1}>A minuscule web-app – the Blackjack game (1 player vs AI). Card deck manipulations
