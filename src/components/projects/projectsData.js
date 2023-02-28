@@ -101,7 +101,7 @@ const projectsData = [
             <p key={4}>Development is still in progress</p>],
         imageUrl: M4FS_PIC,
         stack: [REACT, TS, REDUX, FIREBASE, FORMIK, MUI],
-        linkUrl: null,
+        linkUrl: 'https://m4fs-app.web.app/',
         id: 'm4fs'
     }, {
         title: 'Raccoon Lists',
