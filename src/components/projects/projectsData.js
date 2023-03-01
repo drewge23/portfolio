@@ -96,7 +96,7 @@ const projectsData = [
         description: [<p key={1}>A prototype of a math learning app. Functionality includes: answer validation,
             progress and test systems, bonus levels system, a simple shop.
             Built with <b>Firebase</b>, <b>React</b>, <b>Redux</b>, <b>Formik</b> and other React libraries.</p>,
-            <p key={2}><b>Login:</b> potential-hirer</p>,
+            <p key={2}><b>Login:</b> potential.hirer@gmail.com</p>,
             <p key={3}><b>Password:</b> drewge23</p>,
             <p key={4}>Development is still in progress</p>],
         imageUrl: M4FS_PIC,
