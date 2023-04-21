@@ -26,7 +26,7 @@ function Skills() {
                     Linguistics, Orel State University, Russia (2019 - 2021)
                 </SkillItem>
                 <SkillItem logoUrl={WEBDEV} link='https://www.tel-ran.com/'>
-                    Front-end development, Tel-Ran College, Rehovot, Israel (2022 - 2023)
+                    Front-end development, Tel-Ran College, Rehovot, Israel (2021 - 2022)
                 </SkillItem>
             </SkillBlock>
             <SkillBlock title='Working Experience ‍🈺💼'>
